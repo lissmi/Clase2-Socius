@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Películas Favoritas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button id="consultarPelicula" class="btn">Película Sorpresa!</button>
+        <p>Selecciona la Película que deseas ver!</p>
+        <select id="listaPeliculas" class="select">
+            <option value="">Selecciona una película</option>
+        </select>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="img/cabritas.png" alt="Cabrita feliz" width="200" height="200">
+            <h2>La película que verás hoy es:</h2>
+            <p id="modalMessage"></p>
+            <button id="modalOk" class="btn">OK</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+
